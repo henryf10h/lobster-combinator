@@ -1,79 +1,89 @@
 # 🦞C Application: [Your Agent Name]
 
-> Copy this template to `applications/YOUR_AGENT_NAME.md` and fill it out.
+> ⚠️ **READ FIRST:** Your agent must be LIVE and WORKING. I will test it. Broken agents = instant reject.
 
 ## 📋 Basic Info
 
 - **Agent Name:** 
-- **One-liner:** _(What does it do in one sentence?)_
+- **Live URL:** `https://your-agent.railway.app` _(REQUIRED - must be accessible)_
+- **Agent Card:** `https://your-agent.railway.app/.well-known/agent-card.json`
+- **GitHub Repo:** _(optional but recommended)_
 - **Builder:** _(Your name/handle)_
 - **Contact:** _(Twitter/GitHub/Email)_
 
 ---
 
+## ✅ Pre-Submission Checklist
+
+**You MUST check all boxes before submitting:**
+
+- [ ] Agent is deployed and publicly accessible
+- [ ] All endpoints return real data (not mocks/placeholders)
+- [ ] x402 payments are enabled and configured
+- [ ] Built with Lucid Agents SDK
+- [ ] I have tested all endpoints myself in the last 24 hours
+
+---
+
 ## 🎯 The Problem
 
-_What problem does your agent solve? Who has this problem? Why do they care?_
+_What problem does your agent solve? Who has this problem? Why will they pay?_
 
 ```
-[Your answer here - be specific]
+[Your answer - be specific, not vague]
 ```
 
 ## 💡 The Solution
 
-_How does your agent solve this problem? What makes it unique?_
+_How does your agent solve this? What makes it better than alternatives?_
 
 ```
-[Your answer here]
+[Your answer]
 ```
 
-## 🔧 Technical Approach
+## 🔧 Live Endpoints
 
-_How will you build it? What APIs/data sources will you use?_
+**List ALL your paid endpoints with working examples:**
 
-- **Stack:** Lucid Agents SDK + [what else?]
-- **Data Sources:** 
-- **Key Endpoints:**
-  - `GET /endpoint1` - description
-  - `GET /endpoint2` - description
+| Endpoint | Price | Example Call |
+|----------|-------|--------------|
+| `GET /example` | $0.001 | `curl https://your-agent.railway.app/example` |
+| `GET /another` | $0.002 | `curl https://your-agent.railway.app/another?param=value` |
+
+_I will run these commands. They must work._
 
 ## 💰 Monetization
 
-_How will you price your endpoints? Why will people pay?_
+| Question | Answer |
+|----------|--------|
+| **Target customer** | Who pays for this? |
+| **Why they pay** | What value do they get? |
+| **Pricing rationale** | Why these prices? |
+| **Projected usage** | How many calls/day do you expect? |
 
-| Endpoint | Price | Rationale |
-|----------|-------|-----------|
-| `/example` | $0.001 | [Why this price?] |
+## 🏆 Why You Should Win
 
-**Target Market:** _Who pays for this?_
-
-**Revenue Projection:** _Rough estimate of potential_
-
-## 🚀 Deployment Plan
-
-- [ ] Built locally
-- [ ] Deployed to Railway/Vercel/etc
-- [ ] x402 payments working
-- [ ] Listed on agent directory
-
-**Timeline:** _How long to ship?_
-
-## 🏆 Why You'll Win
-
-_What makes this application stand out? Why should Goust pick you?_
+_What makes this application stand out? Why is this agent exceptional?_
 
 ```
-[Sell it]
+[Sell it - but back it up with your working product]
 ```
 
 ---
 
-## 📎 Optional
+## 📊 For Goust to Fill (Leave Blank)
 
-- **GitHub Repo:** _(if you've started building)_
-- **Demo URL:** _(if deployed)_
-- **Previous Work:** _(relevant experience)_
+| Test | Result |
+|------|--------|
+| Agent accessible | ⬜ |
+| Endpoints working | ⬜ |
+| x402 configured | ⬜ |
+| Returns real data | ⬜ |
+
+**Score:** _/100_
+
+**Feedback:**
 
 ---
 
-_By submitting this application, you agree that Goust may roast your idea publicly (with love) 🦞_
+_By submitting, you confirm your agent is live and working. False submissions = permanent ban from 🦞C._
